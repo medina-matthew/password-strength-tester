@@ -1,39 +1,43 @@
-# password-strength-tester
+# Password Strength Tester
 
-This project will be my first project. I will be doing a password strength tester in python.
+This project is a password strength tester written in Python. It aims to evaluate the strength of passwords based on multiple factors, providing feedback and recommendations for improvement. This is my first project and will be published on my GitHub.
 
-# Project Overview
+## Project Overview
 
-You will be asked to input a password into the terminal where my program will test its strength.
+The password strength tester evaluates passwords by checking for:
 
-Some of the main factors include:
-  Length: 
-  Upper Case letters:
-  Lower Case Letters:
-  Numbers:
-  Special Characters:
-  Common Passwords:
-  Password Entropy:
+	•	Length (minimum recommended length)
+	•	Uppercase letters
+	•	Lowercase letters
+	•	Numbers
+	•	Special characters
+	•	Commonly used passwords (the tester checks against a list of common passwords to prevent weak choices)
+	•	Password Entropy (a measure of how unpredictable the password is)
 
-Once tested, the tester will provide feedback and recommendations based off of critera met/not met.
+### Ratings:
 
-Possible ratings include:
-  Super Weak
-  Weak
-  Okay
-  Strong
-  Extra Strong
+The tester provides the following ratings based on the password’s strength:
 
-# Usage Examples
+	•	Super Weak
+	•	Weak
+	•	Okay
+	•	Strong
+	•	Extra Strong
 
-Input any of these passwords to see what their strength would be, as well as some recommendations as to how to make it stronger:
-  List
-  Multiple
-  Passwords
-  Here
+## Usage Examples
 
-# Future Improvements
+Here are some examples of passwords and their expected strength ratings:
 
-Some future improvements that I would like to try and add include:
-  Recommended password generator 
-  Feedback to about how long it would take for the password to be compromised
+	•	123456 – Super Weak
+	•	Password123! – Okay
+	•	G#k4L%p9z – Strong
+
+Simply input your password in the terminal, and the program will analyze it and provide feedback on how to strengthen it.
+
+## Future Improvements
+
+In future updates, I plan to add:
+
+	•	A recommended password generator to suggest strong passwords.
+	•	Feedback on how long it would take for the password to be cracked using brute force.
+	•	Integration with external APIs (like HaveIBeenPwned) to check if the password has been compromised.
