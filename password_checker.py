@@ -7,14 +7,6 @@ class PasswordChecker:
 
     def __init__(self, password = ''):
         self.password = password
-    
-
-# Defining an input validation function, just to ensure that some sort of password is typed
-
-    def input_validation(self):
-        if not self.password:
-            return True
-        return False
 
 # Defining the length function that will determine the password's strength based on only the length
 # Initializing the password_length to the password's length
@@ -173,7 +165,6 @@ class PasswordChecker:
         numbers_feedback = self.numbers()
         special_characters_feedback = self.special_characters()
         entropy_feedback = self.entropy_calculator()
-        input_checker = self.input_validation()
 
         feedback = (
             f"Length:\n     {length_feedback}\n"
